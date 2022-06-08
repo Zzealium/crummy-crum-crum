@@ -4,7 +4,7 @@ module Crummy
   class StandardRenderer
     include ActionView::Helpers::UrlHelper
     include ActionView::Helpers::TagHelper unless self.included_modules.include?(ActionView::Helpers::TagHelper)
-    ActionView::Helpers::TagHelper::BOOLEAN_ATTRIBUTES.to_h.deep_dup.merge([:itemscope].to_set)
+    ActionView::Helpers::TagHelper::BOOLEAN_ATTRIBUTES.deep_dup.merge([:itemscope].to_set)
     #ActionView::Helpers::TagHelper::BOOLEAN_ATTRIBUTES.merge([:itemscope].to_set) ### Had to add the above line to fix the frozen hash
 
     # Render the list of crumbs as either html or xml
