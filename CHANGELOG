@@ -1,0 +1,47 @@
+1.8.0
+* [ADDED] You can now set each parameters individually for each crumb
+* [ADDED] You can now set each crumb on right or left side
+* [ADDED] You can now use a html in a crumb name
+* [REFACTORED] Don't render empty html_options for tags.
+
+1.7.2
+* [ADDED] :truncate option to shorten text in breadcrumbs
+* [ADDED] Added ability to pass html link options through to renderer
+
+1.7.1
+* [ADDED] :last_crumb_linked option to disable linking crumb on current page
+
+1.7.0
+* [ADDED] Added option for google microdata
+* [REFACTORED] Cleaned up development internals
+
+1.6.0
+* [FIXED] A fix for the escaped html problem in :html_list
+
+1.5
+* [ADDED] Global configuration options
+* [REFACTORED] HTML now uses content_tags
+
+1.3.6
+* [FIXED] :li_class fixed in StandardRenderer#crumb_to_html_list
+
+1.3.5
+* [FIXED] Spacing in name argument was causing errors.
+* [FIXED] Bug where everything was getting parsed as an Array.
+
+1.3
+* [FIXED] html_safe! is no longer called by default. That's the user's prerogative to do now.
+* [ADDED] Allow record to respond to to_s even if you pass a url or block.
+* [ADDED] Allow name to be a proc or lambda method
+* [ADDED] clear crumbs as before filter
+
+1.2
+* [ADDED] html_list format option
+* [FIXED] Bug with Passenger and REE deployments
+
+1.1.1
+
+* [FIXED] issue with undefined method escape_once for Rails 3.
+* [FIXED] spelling of separator
+
+1.1.0
